@@ -1,47 +1,51 @@
 package com.islamic.wallpaper;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
-
-import android.os.Bundle;
 import androidx.appcompat.widget.Toolbar;
-
-import com.google.android.material.navigation.NavigationBarView;
-import com.google.android.material.navigation.NavigationView;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 public class MainActivity extends AppCompatActivity {
     public DrawerLayout drawerLayout;
     public ActionBarDrawerToggle actionBarDrawerToggle;
     Toolbar toolbar;
-    NavigationView navigationView;
+
+    TextView titleTv;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        NavigationView navigationView = findViewById(R.id.navView);
-        DrawerLayout drawerLayout = findViewById(R.id.my_drawer_layout);
-        Toolbar toolbar = findViewById(R.id.my_toolbar);
-        setSupportActionBar(toolbar);
+        setSideNavigationMenu();
+        titleTv = findViewById(R.id.TitleTv);
+        titleTv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Upload_Images.class));
+            }
+        });
 
-// Create an instance of ActionBarDrawerToggle
-        ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(
+    }
+
+    private void setSideNavigationMenu() {
+        drawerLayout = findViewById(R.id.my_drawer_layout);
+        toolbar = findViewById(R.id.my_toolbar);
+        setSupportActionBar(toolbar);
+        actionBarDrawerToggle = new ActionBarDrawerToggle(
                 MainActivity.this,
                 drawerLayout,
                 toolbar,
                 R.string.nav_open,
                 R.string.nav_close
         );
-
-// Set the drawer listener to the ActionBarDrawerToggle
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
-
-// Sync the state of the ActionBarDrawerToggle
         actionBarDrawerToggle.syncState();
         actionBarDrawerToggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.white));
-
-
-
-        // to make the Navigation drawer icon always appear on the action bar
     }
 }
