@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "525920625454",
+    "project_id": "islamicwallpapers-b007e",
+    "storage_bucket": "islamicwallpapers-b007e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525920625454:android:c73cbe5f26c4a743cb50bf",
+        "android_client_info": {
+          "package_name": "com.islamic.wallpaper"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBehVvNRuSkwplZBUSDbrABDv5PevTnEJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
