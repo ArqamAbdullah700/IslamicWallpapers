@@ -15,7 +15,7 @@
     <ImageView
         android:id="@+id/selectedImageView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="400dp"
         android:layout_below="@id/chooseImageButton"
         android:layout_marginTop="16dp"
         android:scaleType="centerInside"
