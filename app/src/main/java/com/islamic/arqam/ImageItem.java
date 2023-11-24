@@ -1,4 +1,4 @@
-package com.islamic.wallpaper;
+package com.islamic.arqam;
 
 public class ImageItem {
     private String imageName;

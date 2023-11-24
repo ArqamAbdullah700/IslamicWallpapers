@@ -1,11 +1,10 @@
-package com.islamic.wallpaper;
+package com.islamic.arqam;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -25,6 +24,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.ListResult;
 import com.google.firebase.storage.StorageReference;
+import com.islamic.wallpaper.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,12 +49,7 @@ public class MainActivity extends AppCompatActivity {
         setSideNavigationMenu();
 
         titleTv = findViewById(R.id.TitleTv);
-        titleTv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Upload_Images.class));
-            }
-        });
+
         recyclerView = findViewById(R.id.recyclerView);
         gridLayoutManager = new GridLayoutManager(MainActivity.this, 2);
 

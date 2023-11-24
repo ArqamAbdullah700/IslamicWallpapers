@@ -1,4 +1,4 @@
-package com.islamic.wallpaper;
+package com.islamic.arqam;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +8,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.islamic.wallpaper.R;
 import com.squareup.picasso.Picasso;
 
 public class FullScreenImageView extends AppCompatActivity {

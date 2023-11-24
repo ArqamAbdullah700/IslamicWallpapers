@@ -1,4 +1,4 @@
-package com.islamic.wallpaper;
+package com.islamic.arqam;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,6 +20,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.islamic.wallpaper.R;
 
 import java.io.IOException;
 

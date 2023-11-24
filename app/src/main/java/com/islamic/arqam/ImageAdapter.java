@@ -1,4 +1,4 @@
-package com.islamic.wallpaper;
+package com.islamic.arqam;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.islamic.wallpaper.R;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 

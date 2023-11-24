@@ -8,7 +8,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.islamic.wallpaper"
+        applicationId = "com.islamic.arqam"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

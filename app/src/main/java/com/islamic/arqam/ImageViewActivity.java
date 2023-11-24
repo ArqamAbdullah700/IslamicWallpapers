@@ -1,4 +1,4 @@
-package com.islamic.wallpaper;
+package com.islamic.arqam;
 
 import android.app.AlertDialog;
 import android.app.WallpaperManager;
@@ -22,9 +22,9 @@ import androidx.cardview.widget.CardView;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+import com.islamic.wallpaper.R;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
@@ -33,7 +33,7 @@ import java.io.IOException;
 public class ImageViewActivity extends AppCompatActivity {
     ImageView imageView, backImageBtn;
     ProgressBar progressBar;
-    FloatingActionButton delete, share,fabFullScreen;
+    FloatingActionButton  share,fabFullScreen;
     CardView setAsWall;
     StorageReference storageReference;
     String imageUrl;
@@ -45,7 +45,6 @@ public class ImageViewActivity extends AppCompatActivity {
         imageView = findViewById(R.id.imageViewDetail);
         backImageBtn = findViewById(R.id.backImageBtn);
         progressBar = findViewById(R.id.progressBar);
-        delete = findViewById(R.id.fabDelete);
         share = findViewById(R.id.fabShare);
         fabFullScreen = findViewById(R.id.fabFullScreen);
         setAsWall = findViewById(R.id.setAsWallpaper);
@@ -63,12 +62,7 @@ public class ImageViewActivity extends AppCompatActivity {
         Log.e("Arqam", imageUrl);
         String imageName = extractImageName(imageUrl);
         storageReference = storage.getReference().child("IslamicWallpapers").child("Images").child(imageName);
-        delete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showDeleteConfirmationDialog();
-            }
-        });
+
 
         share.setOnClickListener(new View.OnClickListener() {
             @Override

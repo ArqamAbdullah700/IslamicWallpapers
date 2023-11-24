@@ -48,28 +48,16 @@
             android:layout_below="@id/my_toolbar"
             android:layout_marginBottom="100dp"
             android:scaleType="fitXY"
-            android:src="@drawable/placeholder" />
+             />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabDelete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_gravity="end"
-            android:layout_marginTop="400dp"
-            android:layout_marginEnd="20dp"
-            app:backgroundTint="#DADADA"
-            app:layout_anchorGravity="bottom|end"
-            app:srcCompat="@drawable/delete" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fabFullScreen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/fabDelete"
             android:layout_alignParentEnd="true"
             android:layout_gravity="end"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="400dp"
             android:layout_marginEnd="20dp"
             app:backgroundTint="#DADADA"
             app:layout_anchorGravity="bottom|end"
