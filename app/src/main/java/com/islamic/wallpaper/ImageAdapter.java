@@ -44,7 +44,6 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
         holder.imageNameTextView.setText(imageItem.getImageName());
 
         // Load the image into the ImageView using Glide
-        Log.d("ImageURL", imageItem.getImageUrl());
 
         holder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
