@@ -24,7 +24,6 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-import com.islamic.wallpaper.R;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 

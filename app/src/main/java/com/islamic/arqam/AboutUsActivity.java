@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.islamic.wallpaper.R;
 
 public class AboutUsActivity extends AppCompatActivity {
     ImageView  backImageBtn;

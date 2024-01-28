@@ -42,9 +42,10 @@
         <activity
             android:name="com.islamic.arqam.Upload_Images"
             android:exported="false" />
-        <activity
-            android:name="com.islamic.arqam.MainActivity"
+
+        <activity android:name="com.islamic.arqam.MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
